@@ -1,0 +1,74 @@
+*{
+    padding:0%;
+    margin: 0%;
+}
+
+body{
+    background-color: antiquewhite;
+    background-image: url("./img/pexels-breakingpic-3243.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: rgba(255,255,255,0.2);
+    width: 70%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    /* backdrop-filter: blur(2px); */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea, button{
+    padding:10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    font: 100 1.1rem sans-serif;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px;
+}
+
+button{   
+    background-color: rgb(50,50,50);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: rgb(5, 104, 33);
+}
+.task{
+    background-color: white;
+    font: 100 1.1rem sans-serif;
+    padding: 30px;
+    color: rgba(0,0,0,0.868);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vmax;
+}
+.task>div{
+    width:100%;
+}
+.deleteBtn:hover{
+    background-color: crimson;
+
+}
+
+.deleteBtn{
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    font-size:1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
