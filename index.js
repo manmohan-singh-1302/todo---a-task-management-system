@@ -3,10 +3,16 @@ const description = document.getElementById("description");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");
 
-const tasks = [];
-
-if(localStorage.value){
+let tasks = [];
+window.onload = function(){
+    loadTasksFromLocalStorage();
     showAllTasks();
+}
+function loadTasksFromLocalStorage(){
+    const storedTasks = localStorage.getItem("tasks");
+    if(storedTasks){
+        tasks = JSON.parse(storedTasks);
+    }
 }
 function showAllTasks (){
     tasks.forEach((value,index)=>{
